@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kunal Harad | DevOps Engineer</title>
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--text:#14202e;--muted:#5b6b7d;--accent:#0a7cff;--accent2:#00b894;--line:#dfe6ee;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1520;--card:#142030;--text:#e8eef6;--muted:#95a5b8;--accent:#4da3ff;--accent2:#2ed3a8;--line:#223348;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1520;--card:#142030;--text:#e8eef6;--muted:#95a5b8;--accent:#4da3ff;--accent2:#2ed3a8;--line:#223348;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;padding:14px 6vw;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav b{color:var(--accent)}nav .links{display:flex;gap:20px;font-size:.95rem;color:var(--muted)}nav .links a:hover{color:var(--accent)}
+@media(max-width:640px){nav .links{display:none}}
+section{padding:80px 6vw;max-width:1100px;margin:auto}
+h2{font-size:1.8rem;margin:0 0 28px}h2 span{color:var(--accent)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;min-height:80vh;position:relative}
+@media(max-width:800px){.hero{grid-template-columns:1fr;text-align:center}.hero .btns,.hero .socials{justify-content:center}}
+.hello{color:var(--accent2);font-family:monospace}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);margin:6px 0;line-height:1.1}
+.type{font-size:1.3rem;color:var(--accent);min-height:2em;font-family:monospace}
+.cursor{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
+p.lead{color:var(--muted);max-width:520px}
+.btns,.socials{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.btn{padding:11px 22px;border-radius:10px;border:1px solid var(--accent);font-weight:600;transition:.25s}
+.btn.fill{background:var(--accent);color:#fff}.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px color-mix(in srgb,var(--accent) 35%,transparent)}
+.soc{padding:8px 16px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-size:.9rem;transition:.25s}.soc:hover{border-color:var(--accent);color:var(--accent)}
+.photo-wrap{position:relative;width:min(300px,70vw);aspect-ratio:1;margin:auto}
+.photo-wrap::before{content:"";position:absolute;inset:-10px;border-radius:50%;background:conic-gradient(var(--accent),var(--accent2),var(--accent));animation:spin 6s linear infinite;filter:blur(6px);opacity:.7}
+@keyframes spin{to{transform:rotate(360deg)}}
+.photo{position:relative;width:100%;height:100%;border-radius:50%;background:var(--card);border:4px solid var(--bg);display:flex;align-items:center;justify-content:center;text-align:center;color:var(--muted);cursor:pointer;overflow:hidden;font-size:.9rem;animation:float 4s ease-in-out infinite}
+.photo img{width:100%;height:100%;object-fit:cover}
+@keyframes float{50%{transform:translateY(-10px)}}
+.blob{position:absolute;width:300px;height:300px;border-radius:50%;background:var(--accent);opacity:.08;filter:blur(40px);top:10%;left:-5%;animation:float 7s ease-in-out infinite;z-index:-1}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 12px 28px rgba(0,0,0,.08)}
+.card h3{margin:0 0 8px;font-size:1.1rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.ico{font-size:1.8rem;display:block;margin-bottom:8px}
+.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.tag{font-size:.75rem;padding:3px 10px;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.skills{display:flex;flex-wrap:wrap;gap:12px}.skill{padding:10px 18px;border-radius:10px;background:var(--card);border:1px solid var(--line);transition:.25s}.skill:hover{transform:scale(1.08);border-color:var(--accent2);color:var(--accent2)}
+.term{background:#0b1220;color:#c8f7dc;font-family:monospace;border-radius:12px;padding:18px;font-size:.9rem;margin-top:24px;overflow-x:auto}
+.term i{color:#7aa2ff;font-style:normal}
+footer{text-align:center;padding:40px 6vw;color:var(--muted);border-top:1px solid var(--line)}
+#theme{background:none;border:1px solid var(--line);border-radius:8px;color:var(--text);padding:5px 10px;cursor:pointer}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.24.7/babel.min.js"></script>
+<script type="text/babel">
+const { useState, useEffect, useRef } = React;
+
+/* ====== EDIT YOUR DETAILS HERE ====== */
+const ME = {
+  name: "Kunal Harad",
+  github: "https://github.com/Kunal182004",
+  linkedin: "https://www.linkedin.com/in/kunal-harad-2652961ba",
+  resume: "https://drive.google.com/drive/folders/1t5ARTDEppCx2QC-TBhri80DPsTppxvSf?usp=drive_link",
+  photo: "" // paste your photo URL here, or click the circle to preview a photo
+};
+const ROLES = ["DevOps Engineer", "Cloud Enthusiast", "CI/CD Builder", "Linux Lover"];
+const PROJECTS = [
+  { icon: "🐳", title: "Dockerized Web App", text: "Packaged a simple web app into a Docker image and ran it as a container. Shows how the same app runs anywhere without “it works on my machine” problems.", tags: ["Docker", "Linux", "Nginx"] },
+  { icon: "⚙️", title: "CI/CD with GitHub Actions", text: "Built a pipeline that automatically tests the code and builds it every time I push to GitHub, so mistakes are caught early.", tags: ["GitHub Actions", "Git", "YAML"] },
+  { icon: "☁️", title: "Static Site on AWS S3", text: "Hosted a static website on AWS S3 and made it fast and public. A beginner-friendly way to learn cloud hosting.", tags: ["AWS", "S3", "CloudFront"] },
+  { icon: "🏗️", title: "Infrastructure with Terraform", text: "Wrote simple Terraform code to create a cloud server automatically instead of clicking around the console. This is Infrastructure as Code.", tags: ["Terraform", "AWS EC2"] },
+  { icon: "📊", title: "Monitoring Dashboard", text: "Set up Prometheus and Grafana to watch CPU and memory of a server and show them on a live dashboard.", tags: ["Prometheus", "Grafana"] },
+  { icon: "📜", title: "Bash Automation Scripts", text: "Wrote small shell scripts to automate boring tasks such as backups and log cleanup.", tags: ["Bash", "Cron", "Linux"] }
+];
+const SKILLS = ["Linux", "Git & GitHub", "Docker", "Kubernetes (basics)", "Jenkins", "GitHub Actions", "AWS", "Terraform", "Bash", "Python", "Prometheus", "Grafana"];
+/* ==================================== */
+
+function useReveal(){
+  useEffect(()=>{
+    const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add("show"); }),{threshold:.15});
+    document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+    return ()=>io.disconnect();
+  },[]);
+}
+
+function Typing(){
+  const [i,setI]=useState(0), [txt,setTxt]=useState(""), [del,setDel]=useState(false);
+  useEffect(()=>{
+    const full=ROLES[i];
+    const t=setTimeout(()=>{
+      if(!del){ setTxt(full.slice(0,txt.length+1)); if(txt.length+1===full.length) setTimeout(()=>setDel(true),1200); }
+      else { setTxt(full.slice(0,txt.length-1)); if(txt.length-1===0){ setDel(false); setI((i+1)%ROLES.length);} }
+    }, del?40:90);
+    return ()=>clearTimeout(t);
+  },[txt,del,i]);
+  return <div className="type">&gt; {txt}<span className="cursor">▍</span></div>;
+}
+
+function Photo(){
+  const [src,setSrc]=useState(ME.photo);
+  const ref=useRef();
+  const pick=e=>{ const f=e.target.files[0]; if(!f) return; const r=new FileReader(); r.onload=()=>setSrc(r.result); r.readAsDataURL(f); };
+  return (
+    <div className="photo-wrap">
+      <div className="photo" onClick={()=>ref.current.click()} title="Click to preview your photo">
+        {src ? <img src={src} alt="Kunal Harad"/> : <span>📷<br/>Your photo here<br/><small>(click to preview)</small></span>}
+      </div>
+      <input ref={ref} type="file" accept="image/*" hidden onChange={pick}/>
+    </div>
+  );
+}
+
+function App(){
+  useReveal();
+  const [dark,setDark]=useState(window.matchMedia("(prefers-color-scheme: dark)").matches);
+  useEffect(()=>{ document.documentElement.setAttribute("data-theme",dark?"dark":"light"); },[dark]);
+  return (<>
+    <nav>
+      <b>&lt;Kunal /&gt;</b>
+      <div className="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+      <button id="theme" onClick={()=>setDark(!dark)}>{dark?"☀️":"🌙"}</button>
+    </nav>
+
+    <section className="hero">
+      <div className="blob"></div>
+      <div>
+        <div className="hello">Hi, I’m</div>
+        <h1>{ME.name}</h1>
+        <Typing/>
+        <p className="lead">Fresh IT engineering graduate from Mumbai. I like automating things, building pipelines and learning how software goes live in the cloud.</p>
+        <div className="btns">
+          <a className="btn fill" href={ME.resume} target="_blank" rel="noopener">View Resume</a>
+          <a className="btn" href="#projects">My Projects</a>
+        </div>
+        <div className="socials">
+          <a className="soc" href={ME.github} target="_blank" rel="noopener">GitHub</a>
+          <a className="soc" href={ME.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <Photo/>
+    </section>
+
+    <section id="about" className="reveal">
+      <h2>About <span>Me</span></h2>
+      <div className="card">
+        <p>I completed my B.E. in Information Technology (2022–2026) at St. John College of Engineering and Management, Palghar. I’m based in Mumbai and I’m looking for a DevOps or cloud role where I can learn fast, automate work and help teams ship software reliably.</p>
+        <div className="term">
+          <i>$</i> whoami<br/>kunal — devops-engineer-in-the-making<br/>
+          <i>$</i> git commit -m "learning something new every day"
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" className="reveal">
+      <h2>My <span>Skills</span></h2>
+      <div className="skills">{SKILLS.map(s=><div className="skill" key={s}>{s}</div>)}</div>
+    </section>
+
+    <section id="projects">
+      <h2>Simple <span>Projects</span></h2>
+      <div className="grid">
+        {PROJECTS.map((p,k)=>(
+          <div className="card reveal" key={p.title} style={{transitionDelay:(k%3)*120+"ms"}}>
+            <span className="ico">{p.icon}</span>
+            <h3>{p.title}</h3>
+            <p>{p.text}</p>
+            <div className="tags">{p.tags.map(t=><span className="tag" key={t}>{t}</span>)}</div>
+          </div>
+        ))}
+      </div>
+      <p style={{color:"var(--muted)",marginTop:20}}>More code on my <a href={ME.github} target="_blank" rel="noopener" style={{color:"var(--accent)"}}>GitHub</a>.</p>
+    </section>
+
+    <section id="contact" className="reveal" style={{textAlign:"center"}}>
+      <h2>Let’s <span>Connect</span></h2>
+      <p className="lead" style={{margin:"0 auto 10px"}}>Open to DevOps and cloud opportunities. Reach out on LinkedIn or check my work on GitHub.</p>
+      <div className="btns" style={{justifyContent:"center"}}>
+        <a className="btn fill" href={ME.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+        <a className="btn" href={ME.github} target="_blank" rel="noopener">GitHub</a>
+        <a className="btn" href={ME.resume} target="_blank" rel="noopener">Resume</a>
+      </div>
+    </section>
+
+    <footer>© 2026 Kunal Harad · Built with React</footer>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
